@@ -18,7 +18,7 @@ Then change access to the key.
 
 log into the server.
 
-`ssh -i ~/.ssh/udacity_key.rsa root@00.00.00.00
+`ssh -i ~/.ssh/udacity_key.rsa root@00.00.00.00`
 
 Update packages list
 
@@ -100,9 +100,9 @@ exit(ctrl+x, y ENTER)
 
 change file permissions
 
-chmod 700 .ssh
+`chmod 700 .ssh`
 
-chmod 644 .ssh/authorized_keys
+`chmod 644 .ssh/authorized_keys`
 
 ##remove unable to resolve host warning(after using sudo)
 type `sudo nano /etc/hostname`
@@ -124,7 +124,7 @@ open sshd_config
 
 `sudo nano /etc/ssh/sshd_config`
 
-change PasswordAuthentication yes to PasswordAuthentication no`
+change PasswordAuthentication yes to PasswordAuthentication no
 
 exit(ctrl+x, y, ENTER)
 
@@ -187,7 +187,7 @@ exit(ctrl+x, y, ENTER)
 
 restart
 
-sudo apache2ctl restart
+`sudo apache2ctl restart`
 
 create apache config file
 
@@ -200,7 +200,7 @@ reload apache2
 `sudo service apache2 reload`
 
 
-##Insatll git
+## Insatll git
 `sudo apt-get install git`
 
 set up git config
@@ -246,7 +246,7 @@ add this to the file
 app = Flask(__name__)
 @app.route("/")
 def hello():
-    return "Hello, Catalog app coming up soon!"
+return "Hello, Catalog app coming up soon!\"
 if __name__ == "__main__":
   app.run()
 `
@@ -306,7 +306,7 @@ paste this into file
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>`
 
-* to get ServerAlias go to hcidata.info/host2ip.cgi
+ to get ServerAlias go to hcidata.info/host2ip.cgi
 
 exit(ctrl+x, y ENTER)
 
@@ -368,7 +368,7 @@ sudo apt-get install postgresql postgresql-contrib
 
 sudo apt-get install libpg-dev
 
-pip install psycopg2'
+pip install psycopg2'`
 
 restart apache2
 
