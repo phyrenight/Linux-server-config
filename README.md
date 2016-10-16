@@ -426,3 +426,21 @@ restart apache2
 `sudo apache2ctl restart`
 
 setup your Oauth2 with your Oauth2 providers
+
+##install unattened-upgrades
+`sudo apt-get install unattended-upgrades`
+
+then
+
+`sudo dpkg-reconfigure --priority=low unattended-upgrades`
+
+then select yes
+
+then hit ENTER
+
+##Install fail2ban
+`sudo apt-get install fail2ban`
+
+maka copy of jail.conf
+`sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`
+under default  change ban tiime from 600 to more
